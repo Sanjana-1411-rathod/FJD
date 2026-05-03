@@ -1,0 +1,1 @@
+# FJD — Fake Job Detector

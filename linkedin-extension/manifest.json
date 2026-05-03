@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "AuthentiJob LinkeIn Scanner",
+  "version": "1.0",
+  "description": "Analyze LinkedIn job postings for scams directly from your browser.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://www.linkedin.com/jobs/*",
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_title": "AuthentiJob"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

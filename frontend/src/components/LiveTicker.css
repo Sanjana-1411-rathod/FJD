@@ -1,0 +1,62 @@
+.ticker-container {
+  display: flex;
+  align-items: center;
+  background: rgba(10, 17, 40, 0.8);
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
+
+.ticker-label {
+  background: var(--danger);
+  color: #fff;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px 0 10px rgba(255, 42, 85, 0.5);
+}
+
+.ticker-scroll {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+  gap: 3rem;
+  padding-left: 100%;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticker-text {
+  color: var(--text-secondary);
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

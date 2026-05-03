@@ -1,0 +1,88 @@
+.logo-page {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.dropzone {
+  width: 100%;
+  min-height: 300px;
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.2);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.dropzone:hover {
+  border-color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.upload-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-secondary);
+}
+
+.file-input {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-preview {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.btn-analyze {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.logo-result {
+  width: 100%;
+  padding: 2rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.logo-details {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
